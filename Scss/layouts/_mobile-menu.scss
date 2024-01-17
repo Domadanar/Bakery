@@ -7,6 +7,7 @@
   background-color: var(--color-primary-light);
   transform: translateX(100%);
   transition: transform 0.3s;
+  z-index: 3;
 
   &.is-open {
     transform: translateX(0);
@@ -14,7 +15,57 @@
 
   &__btn-close {
     position: absolute;
-    top: 16px;
-    right: 24px;
+    top: 40px;
+    right: 40px;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    fill: var(--color-primary-dark);
+
+    @media screen and (min-width: $bp-desktop) {
+    }
+  }
+
+  &__menu {
+    display: flex;
+    padding-top: 32px;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 16px;
+  }
+
+  &__logo {
+    width: 72px;
+    height: 38px;
+    fill: var(--color-primary-dark);
+  }
+
+  &__link {
+    color: var(--color-primary-dark);
+  }
+
+  &__wheel {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 138px;
+    height: 138px;
+  }
+
+  &__bread {
+    position: absolute;
+    width: 105px;
+    height: 224px;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 10px;
+    padding-right: 25px;
   }
 }

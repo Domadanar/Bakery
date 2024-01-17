@@ -16,17 +16,28 @@
   }
 
   &::before {
-    width: 180px;
-    height: 120px;
-    left: 0;
-    background-image: url("../Images/decor-bread-small.png");
+    display: none;
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+      width: 180px;
+      height: 120px;
+      left: 0;
+      background-image: url("../Images/decor-bread-small.png");
+    }
   }
 
   &::after {
-    width: 380px;
-    height: 185px;
+    width: 100px;
+    height: 90px;
     right: 0;
-    background-image: url("../Images/decor-bread-large.png");
+    background-image: url("../Images/vsbkdjvb-PhotoRoom.png");
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+      width: 380px;
+      height: 185px;
+      right: 0;
+      background-image: url("../Images/decor-bread-large.png");
+    }
   }
 
   &__container {
@@ -38,6 +49,25 @@
       flex-basis: 50%;
       flex-direction: row;
     }
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  &__address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  &__messenger {
+    padding-top: 16px;
+    justify-content: center;
+    display: flex;
+    gap: 22px;
   }
 
   &__nav,

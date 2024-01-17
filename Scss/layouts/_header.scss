@@ -9,6 +9,10 @@
     padding-top: 32px;
   }
 
+  &__logo {
+    fill: var(--color-primary-light);
+  }
+
   &__container {
     display: flex;
     align-items: center;

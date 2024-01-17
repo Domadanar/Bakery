@@ -16,7 +16,7 @@
       <div class="container">
         <div class="header__container">
           <nav class="header__nav">
-            <a href="/">
+            <a class="header__logo" href="/">
               <img src="./Images/logo.svg" alt="Logo" />
             </a>
             <ul class="header__menu">
@@ -32,7 +32,9 @@
               </li>
             </ul>
           </nav>
-          <button class="header__button button modal-btn-open" type="button">
+          <button
+            class="header__button button modal-mobile-btn-open"
+            type="button">
             Замовити дзвінок
           </button>
           <button class="header__burger menu-btn-open" type="button">
@@ -41,9 +43,51 @@
             </svg>
           </button>
           <div class="mobile-menu">
+            <nav class="mobile-menu__nav">
+              <a class="mobile-menu__logo" href="/">
+                <img src="./Images/logo-mobile-menu.svg" alt="Logo" />
+              </a>
+              <ul class="mobile-menu__menu">
+                <li>
+                  <a class="mobile-menu__link link" href="#tradition-section"
+                    >Наші традиції</a
+                  >
+                </li>
+                <li>
+                  <a class="mobile-menu__link link" href="#chefs-section"
+                    >Шеф-кухарі</a
+                  >
+                </li>
+                <li>
+                  <a class="mobile-menu__link link" href="#formats-section"
+                    >Формати</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="mobile-menu__link link"
+                    class="header-link"
+                    href="#contacts-section"
+                    >Контакти</a
+                  >
+                </li>
+              </ul>
+            </nav>
             <button class="mobile-menu__btn-close menu-btn-close" type="button">
-              Close
+              <svg width="24" height="24">
+                <use href="./Images/icons.svg#icon-close"></use>
+              </svg>
             </button>
+            <img
+              class="mobile-menu__wheel"
+              src="./Images/linkedpathgroup.png"
+              alt="text wheel" />
+            <img />
+            <img
+              class="mobile-menu__bread"
+              src="./Images/mbadvn-PhotoRoom.png"
+              alt="text wheel" />
+            <img />
           </div>
         </div>
       </div>
@@ -100,7 +144,7 @@
             </div>
             <img
               class="tradition-section__image"
-              src="/Images/baker-man.jpg"
+              src="./Images/baker-man.jpg"
               alt="baker-man smile" />
           </div>
         </div>
@@ -362,7 +406,7 @@
           <nav class="footer__nav">
             <div class="footer__logo">
               <a href="#">
-                <img src="./Images/logo.svg" alt="Logo" />
+                <img class="logo" src="./Images/logo.svg" alt="Logo" />
               </a>
             </div>
             <ul class="footer__menu">
@@ -396,7 +440,7 @@
                   >
                 </li>
               </ul>
-              <div>
+              <div class="footer__messenger">
                 <a href="#"
                   ><svg class="footer__address-icon" width="32" height="32">
                     <use href="./Images/icons.svg#icon-facebook"></use>
@@ -422,7 +466,9 @@
     <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal__btn-close modal-btn-close" type="button">
-          Close
+          <svg width="32" height="32">
+            <use href="./Images/icons.svg#icon-close"></use>
+          </svg>
         </button>
         <h2>Замовити дзвінок</h2>
         <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
@@ -481,5 +527,6 @@
     <script src="./js/format-slider.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal-mobile.js"></script>
   </body>
 </html>
